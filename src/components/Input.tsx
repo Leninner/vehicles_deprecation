@@ -11,7 +11,7 @@ export const InputComponent = (props: FloatLabelDemoProps) => {
   const { id, value, onChange, label } = props;
 
   return (
-    <div className="card flex justify-content-center my-2">
+    <div className="card flex justify-content-center my-4">
       <span className="p-float-label">
         <InputText id={id} value={value} onChange={(e) => onChange(e.target.id, e.target.value)} />
         <label htmlFor={id}>{label}</label>

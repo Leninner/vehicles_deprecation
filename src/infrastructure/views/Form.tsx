@@ -18,7 +18,7 @@ export const FormView = () => {
   const options: string[] = ['higher', 'medium', 'lower'];
 
   return (
-    <form onSubmit={handleSubmit} className="grid place-content-center">
+    <form onSubmit={handleSubmit} className="grid place-content-center gap-10">
       <InputComponent id="username" value={values?.username || ''} onChange={handleInputChange} label="Tu nombre" />
       <InputComponent id="purchaseValue" value={values?.purchaseValue || ''} onChange={handleInputChange} label="Valor de compra de tu auto" />
       <InputComponent id="time" value={values?.time || ''} onChange={handleInputChange} label="Años de tu auto" />
